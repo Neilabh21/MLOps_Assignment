@@ -1,0 +1,6 @@
+[cache]
+    dir = /home/neilabh/Videos/Learner's Space 2021/external_cache
+[core]
+    remote = storage
+['remote "storage"']
+    url = s3://mlopsdvc170010014/dvcstore

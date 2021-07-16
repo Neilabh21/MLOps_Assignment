@@ -26,10 +26,10 @@ X_train.to_csv("../data/processed/train.csv", index=False)
 X_test.to_csv("../data/processed/test.csv", index=False)
 
 # Import Decision Tree Classifier
-from sklearn.tree import DecisionTreeClassifier 
+from sklearn.ensemble import RandomForestClassifier
 
 # Create Decision Tree classifer object
-clf = DecisionTreeClassifier(criterion = 'entropy')
+clf = RandomForestClassifier()
 
 # Train Decision Tree Classifer
 clf = clf.fit(X_train,y_train)

@@ -39,7 +39,7 @@ pickle.dump(clf, open("../models/model.pkl", 'wb'))
 
 from sklearn import metrics
 import json
-with open('acc_f1.json', 'w') as f:
+with open('../metrics/acc_f1.json', 'w') as f:
     json.dump([metrics.accuracy_score(Y_test, y_pred), metrics.f1_score(Y_test, y_pred)], f)
 
 
